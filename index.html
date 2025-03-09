@@ -2,208 +2,188 @@
 <html>
 
 <head>
-<title>Portfolio</title>
-<style>
-    body {
-        font-family: Helvetica, Arial, sans-serif;
-        word-spacing: 5px;
-        color: #2e2e2e;
-        background-color: #dceecd;
-        margin: 0;
-    }
-    .search{
-        position: absolute;
-        top: 90px; 
-        left: 80%;
-        z-index: 2;
-    }
-    .box {
-        position: absolute;
-        z-index: 1;
-        background-color: #a7bc97;
-        width: 100%;
-        height: 150px;
-        padding: 0;
-        margin: 0;
-    }
+    <title>Portfolio</title>
+    <style>
+        /* General Page Styles */
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            word-spacing: 5px;
+            color: #2e2e2e;
+            background-color: #dceecd;
+            margin: 0;
+        }
 
-</style>
+        /* Search Bar Styling */
+        .search-container {
+            position: absolute;
+            top: 90px; 
+            left: 80%;
+            z-index: 2;
+        }
+
+        /* Header Banner Styling */
+        .header-banner {
+            position: absolute;
+            z-index: 1;
+            background-color: #a7bc97;
+            width: 100%;
+            height: 150px;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="box"></div>
+    <!-- Header Banner -->
+    <div class="header-banner"></div>
 
     <br>
 
+    <!-- Name and Job Title -->
     <h1 style="
         position: relative;
         z-index: 2;
         margin: 20px;
         color: #ffffff;">
-        <b><span style="font-size: 40px;"> Jane Doe </span><br><span style="font-size: 30px;"> Digital Marketing Manager </span></b></h1>  
+        <b><span style="font-size: 40px;"> Jane Doe </span><br>
+        <span style="font-size: 30px;"> Digital Marketing Manager </span></b>
+    </h1>  
 
     <br>
 
-    <div class="search">    
+    <!-- Search Bar -->
+    <div class="search-container">    
         <form action="/search" method="GET">
-        <input 
-        style="border: 2px solid #ffffff;"
-        type="search" 
-        id="site-search" 
-        name="q"
-        placeholder="Search the site..." />
+            <input 
+                style="border: 2px solid #ffffff;"
+                type="search" 
+                id="site-search" 
+                name="q"
+                placeholder="Search the site..." 
+            />
+            <button id="button"
+                style="
+                background-color: #7c8e6e;
+                color: #ffffff;
+                border: 2px solid #ffffff;
+                border-radius: 3px;
+                margin: 4px 2px;
+                cursor: pointer;">
+                Search
+            </button>
+        </form>
+    </div>
 
-        <button id="button"
-        style="
-        background-color: #7c8e6e;
-        color: #ffffff;
-        border: 2px solid #ffffff;
-        border-radius: 3px;
-        margin: 4px 2px;
-        cursor: pointer;"
-        >Search</button>
-    </form></div>
-
-
-
-    <h2 style="
-    margin: 20px;
-    text-decoration: underline;
-    ">SUMMARY</h2>
-
-        <p style="
-            background-color:  #ffffff;
-            padding: 20px;
-            margin: 20px;
-            color: #2e2e2e;"
-        >I am  a dedicated and creative digital marketing professional with over five years of experience specializing in content strategy, SEO, and social media management.
+    <!-- Summary Section -->
+    <h2 style="margin: 20px; text-decoration: underline;">SUMMARY</h2>
+    <p style="
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 20px;
+        color: #2e2e2e;">
+        I am a dedicated and creative digital marketing professional with over five years of experience specializing in content strategy, SEO, and social media management.
         I began my career working in various marketing roles, honing my skills in crafting data-driven campaigns and developing engaging online content. 
         Throughout my career, I successfully led projects that increased brand visibility and customer engagement, helping companies grow their online presence and boost sales. 
-        I am passionate about continuous learning, always staying up to date with the latest trends in the digital marketing world, and am currently seeking new opportunities to apply my expertise in a dynamic and challenging environment.</p>
+        I am passionate about continuous learning, always staying up to date with the latest trends in the digital marketing world, and am currently seeking new opportunities to apply my expertise in a dynamic and challenging environment.
+    </p>
 
-<br>
+    <br>
 
+    <!-- Skills Section -->
     <article style="margin: 20px;">
-    <h3 style="
-    text-decoration: underline;
-    ">Skills and competencies:</h3>
-        <span><ul style=" 
-        background-color: #a7bc97;
-        color: #ffffff;
-        margin: 5px;
-        padding: 30px;">
-        <li>Digital Marketing</li>
-        <li>Social Media Management</li>
-        <li>Content Creation</li>
-        <li>Microsoft Office Suite</li>
-        <li>Adobe Creative Suite (Photoshop, Illustrator)</li>
-        </span></ul>
+        <h3 style="text-decoration: underline;">Skills and Competencies:</h3>
+        <ul class="skills-section">
+            <li>Digital Marketing</li>
+            <li>Social Media Management</li>
+            <li>Content Creation</li>
+            <li>Microsoft Office Suite</li>
+            <li>Adobe Creative Suite (Photoshop, Illustrator)</li>
+        </ul>
     </article>
 
-<br>
+    <br>
 
+    <!-- Work Experience Section -->
     <article style="margin: 20px;">  
-    <h3 style="
-    text-decoration: underline;
-    ">Work Experience:</h3>
-        <span><div style=" 
-            background-color: #a7bc97;
-            color: #ffffff;
-            margin: 5px;
-            padding: 20px;"><p>Digital Marketing Manager
-        XYZ Company 
-        January 2022 - Present</p>
-        <ul >
-        <li>Lead a team of 5 marketing professionals in executing digital marketing strategies.</li>
-        <li>Increased online sales by 30% through targeted email campaigns and SEO optimization.</li>
-        <li>Managed social media accounts, growing engagement by 50% in the first year.</li>
-        <li>Conducted market research to identify new opportunities for product promotion.</li>
-        </ul>
-        <br>
-        <p>Marketing Coordinator
-        ABC Corp
-        June 2018 - December 2021</p>
-        <ul>
-        <li>Developed and implemented content strategies that increased website traffic by 40%.</li>
-        <li>Coordinated and executed email marketing campaigns, achieving an open rate of 25%.</li>
-        <li>Assisted with the planning and execution of trade shows, generating 500+ new leads.</li>
-        <li>Worked with the creative team to develop marketing materials, including brochures, advertisements, and social media posts.</li>
-        </div></span></ul>
+        <h3 style="text-decoration: underline;">Work Experience:</h3>
+        <div class="work-experience">
+            <p><b>Digital Marketing Manager</b><br>
+            XYZ Company <br>
+            January 2022 - Present</p>
+            <ul>
+                <li>Lead a team of 5 marketing professionals in executing digital marketing strategies.</li>
+                <li>Increased online sales by 30% through targeted email campaigns and SEO optimization.</li>
+                <li>Managed social media accounts, growing engagement by 50% in the first year.</li>
+                <li>Conducted market research to identify new opportunities for product promotion.</li>
+            </ul>
+            <br>
+            <p><b>Marketing Coordinator</b><br>
+            ABC Corp<br>
+            June 2018 - December 2021</p>
+            <ul>
+                <li>Developed and implemented content strategies that increased website traffic by 40%.</li>
+                <li>Coordinated and executed email marketing campaigns, achieving an open rate of 25%.</li>
+                <li>Assisted with the planning and execution of trade shows, generating 500+ new leads.</li>
+                <li>Worked with the creative team to develop marketing materials, including brochures, advertisements, and social media posts.</li>
+            </ul>
+        </div>
     </article>  
 
-
+    <!-- Education Section -->
     <article style="margin: 20px;">
-    <h3 style="text-decoration: underline;">Education:</h3>
-        <p style=" 
-        background-color: #a7bc97;
-        color: #ffffff;
-        margin: 5px;
-        padding: 20px;">Bachelor of Science in Marketing, Y University 
-        <br>Graduated: May 2018
-        <br>Relevant coursework: Digital Marketing, Consumer Behavior, Advertising, Market Research.</p>
+        <h3 style="text-decoration: underline;">Education:</h3>
+        <p class="education-section">
+            <b>Bachelor of Science in Marketing</b>, Y University <br>
+            Graduated: May 2018<br>
+            Relevant coursework: Digital Marketing, Consumer Behavior, Advertising, Market Research.
+        </p>
     </article>
 
-<br>
+    <br>
 
-    <article style="
-    background-color: #ffffff;
-    color: #2e2e2e;
-    border: 10px, solid #a7bc97;
-    margin: 5px;
-    padding: 10px;
-    margin: 20px;">
-    <span><h3 style=" text-decoration: underline;">Contact Details:</h3>
-        <p>Name: Jane Doe</p>
-        <p>Address: Cape Town, South Africa</p>
-        <p>Phone: Available on request</p>
-        <p>email-address: myemailaddress@gmail.com</p></span>
-        <style>img{
-            position: absolute;
-            left: 70%;
-            top: 196%;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }</style>
+    <!-- Contact Section -->
+    <article class="contact-info">
+        <h3 style="text-decoration: underline;">Contact Details:</h3>
+        <p><b>Name:</b> Jane Doe</p>
+        <p><b>Address:</b> Cape Town, South Africa</p>
+        <p><b>Phone:</b> Available on request</p>
+        <p><b>Email:</b> myemailaddress@gmail.com</p>
+
+        <!-- Profile Image -->
+        <style>
+            img {
+                position: absolute;
+                left: 70%;
+                top: 196%;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+        </style>
         <img src="JaneDoe.png">
     </article>
 
-    <h2 style="
-    margin: 20px;
-    text-decoration: underline;
-    ">Feedback</h2>
-    <p style="
-    margin: 20px;">If you would like to leave any reviews on how I can improve my CV or would like to contact me,<br> please leave a comment bellow.</p>
-    <span><form action="/submit" method="POST"
-        style="margin: 20px;"
-        >
-        
-        <label for="name"
-        >Name:</label>
-        <input 
-        type="text" 
-        id="name" 
-        name="name" 
-        required><br><br>
+    <!-- Feedback Section -->
+    <h2 style="margin: 20px; text-decoration: underline;">Feedback</h2>
+    <p style="margin: 20px;">
+        If you would like to leave any reviews on how I can improve my CV or would like to contact me,<br> please leave a comment below.
+    </p>
+
+    <!-- Feedback Form -->
+    <form action="/submit" method="POST" style="margin: 20px;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
         <label for="email">Email:</label>
-        <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        required><br><br>
+        <input type="email" id="email" name="email" required><br><br>
 
         <label for="message">Message:</label><br>
-        <textarea 
-        id="message" 
-        name="message" 
-        rows="4" 
-        cols="50" 
-        required></textarea><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
 
         <button type="submit">Submit</button>
-    </form></span>
+    </form>
 
 </body>
 
